@@ -1,3 +1,9 @@
+def clear(): 
+    if os.name == 'nt':
+         os.system('cls') 
+    else:
+         os.system('clear')
+
 def add_product(name, amount):
     if name in products:
         products[name] += amount
